@@ -7,7 +7,8 @@ users: list[dict] = [
 ]
 
 
-for user in users:
-    print(f"Twój znajomy {user['name']} opublikował: {user['posts']}")
+def show_users(user_list: list[dict]) -> None:
+    for user in user_list:
+        print(f"Twój znajomy {user['name']} opublikował: {user['posts']}")
 
-
+show_users(users)
